@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đổi tiền</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>amount<br>
+        <input type="number" value="number" id="am"/></td>
+        <td>from currency<br>
+            <select name="quốc gia" id="in">
+                <option value="vnd">việt nam đồng</option>
+                <option value="usd">usd</option>
+            </select>
+        </td>
+        <td>to currency<br>
+            <select name="quốc gia" id="out">
+                <option value="usd">usd</option>
+                <option value="vnd">việt nam đồng</option>
+            </select>
+        </td>
+        <td>
+            <input type="submit" value="convert" onclick="doitien()"/>
+        </td>
+    </tr>
+    <tr>
+        <td>kết quả</td>
+        <td>
+            <p id="kq"></p>
+        </td>
+    </tr>
+</table>
+<script src="md1doitien.js"></script>
+</body>
+</html>
