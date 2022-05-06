@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="mesenger();">Click Me1!</button><br>
+<div id="messageDiv"></div>
+<button type="button" onclick="mesenger2();">Click Me2!</button><br>
+<button type="button" onclick="mesenger3();">Click Me3!</button><br>
+<button type="button" onclick="mesenger4();">Click Me4!</button>
+<script>
+function mesenger() { alert("xin chào");}
+function mesenger2(){
+    document.getElementById('messageDiv').innerHTML = 'Xin chào2!';}
+function mesenger3(){ document.write("xin chào 3");}
+function mesenger4() { console.log("xin chào 4");}
+</script>
+</body>
+</html>
