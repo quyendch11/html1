@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let dangnhap = prompt ("nhập dữ liệu");
+  let thongdiep = (dangnhap=="nhân viên") ?
+      "xin chào":
+      (dangnhap=="giám đốc")?
+          "chào sếp":
+          (dangnhap=="")?
+              "không phận sự miễn vào":
+              "";
+  alert(thongdiep);
+</script>
+</body>
+</html>
