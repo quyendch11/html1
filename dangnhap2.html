@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let userName = prompt("tên dăng nhập", '');
+  if (userName == 'admin') {
+    let pass = prompt('mật khẩu', '');
+    if (pass == 'themaster') {
+      alert('xin chào');
+    } else if (pass == null) {
+      alert('Canceled.');
+    } else {
+      alert('sai mật khẩu');
+    }
+  } else if (userName == null) {
+    alert('Canceled');
+  } else {
+    alert("người dùng không tồn tại");
+  }
+</script>
+</body>
+</html>
