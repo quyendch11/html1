@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="md1dongian.css">
+    <style>
+        td {
+            text-align: left;
+        }
+        th { text-align: center}
+    </style>
+</head>
+<body>
+<table>
+       <tr>
+           <th colspan="4" style="background-color:Tomato;">Sở thích của bạn</th>
+       </tr>
+    <tr>
+        <td style="color: blue"> Họ và tên</td>
+        <td colspan="3"><input name="name" type="text"/></td>
+    </tr>
+    <tr>
+        <td style="color:blue"> Email</td>
+        <td colspan="3"><input name="email" type="text"/></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: top;color: blue" rowspan="3">Sở thích</td>
+        <td style="color:orange">
+            <label><input type="checkbox" name="sport"/>Thể thao</label><br>
+        </td>
+        <td style="color:orange">
+            <label><input type="checkbox" name="âm nhạc"/>Âm nhạc</label><br>
+        </td>
+        <td style="color:orange">
+            <label><input type="checkbox" name="đọc sách"/>Đọc sách</label><br>
+        </td>
+    </tr>
+    <tr>
+        <td style="color:orange">
+            <label><input type="checkbox" name="lướt web"/>lướt web</label><br>
+        </td>
+        <td style="color:orange">
+            <label><input type="checkbox" name="chơi game"/>chơi game</label><br>
+        </td>
+        <td style="color:orange">
+            <label><input type="checkbox" name="điện ảnh"/>điện ảnh</label><br>
+        </td>
+    </tr>
+    <tr>
+        <td style="color:orange">
+            <label><input type="checkbox" name="du lịch"/>du lịch</label>
+        </td>
+    </tr>
+    <tr>
+        <th colspan="4"><input type="submit" value="Gửi thông tin"/>
+            <input type="reset" value="Nhập lại"/>
+        </th>
+    </tr>
+</table>
+</body>
+</html>

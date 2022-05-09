@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1{background-color: aquamarine; color: cornflowerblue;}
+        body {background-color: blanchedalmond;}
+        th{ color:blue; text-align: left}
+        type{width:100px;}
+    </style>
+</head>
+<body>
+<h1>đăng ký học viên</h1>
+<table>
+    <tr>
+        <th>Họ và tên </th>
+        <th><input name="name"type="text"/></th>
+    </tr>
+    <tr>
+        <th>ngày sinh</th>
+        <th style="width:300px"><input name="ngày sinh"type="text"/></th>
+    </tr>
+    <tr>
+        <th>giới tính</th>
+        <td><label><input name="gender"type="radio"/>nam</label>
+        <label><input name="gender"type="radio"/>nữ</label>
+        </td>
+    </tr>
+    <tr>
+        <th>địa chỉ</th>
+        <th><textarea cols="50" rows="4"></textarea></th>
+    </tr>
+    <tr>
+        <th>lớp</th>
+        <th>
+            <select name="chọn lớp">
+            <option value="chọn lớp">-chọn lớp-</option>
+            <option value="a">a</option>
+            <option value="b">b</option>
+        </select>
+        </th>
+    </tr>
+    <tr>
+        <th>email</th>
+        <th><input name="email" type="text"/></th>
+    </tr>
+    <tr>
+        <th>điện thoại</th>
+        <th><input name="điện thoại"type="number"/></th>
+    </tr>
+    <tr>
+        <th colspan="2"><input type="submit" value="đăng ký"/>
+            <input type="reset" value="nhập lại"/>
+        </th>
+    </tr>
+</table>
+</body>
+</html>
