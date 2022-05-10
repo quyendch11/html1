@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Do you love me</h1>
+<p>
+  <input type="button" value="yes" onclick="ok()"/>
+    <input id="nut" style="position: absolute" type="button" value="no" onmouseover="no()"/>
+</p>
+<script>
+    function ok(){
+        alert("sáng suốt đấy");
+    }
+    function no(){
+        let width= 500;
+        let height = 500;
+        let x;
+        let y;
+        x = Math.random()*width;
+        y= Math.random()*height;
+        let z = document.getElementById("nut");
+        z.style.left= x+"px";
+        z.style.top = x+"px";
+    }
+</script>
+</body>
+</html>
