@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+      <td colspan="4"> <input id="hienthi" type="text>"/></td>
+  </tr>
+    <tr>
+        <td> <input type="button" value="1" onclick="giatri('1')" /> </td>
+        <td> <input type="button" value="2" onclick="giatri('2')"/> </td>
+        <td> <input type="button" value="3" onclick="giatri('3')"/> </td>
+        <td> <input type="button" value="+" onclick="giatri('+')" /> </td>
+    </tr>
+    <tr>
+        <td><input type="button" value="4" onclick="giatri('4')"/></td>
+        <td><input type="button" value="5" onclick="giatri('5')"/></td>
+        <td><input type="button" value="6" onclick="giatri('6')"/></td>
+        <td><input type="button" value="-" onclick="giatri('-')"/></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="7" onclick="giatri('7')"/></td>
+        <td><input type="button" value="8" onclick="giatri('8')"/></td>
+        <td><input type="button" value="9" onclick="giatri('9')"/></td>
+        <td><input type="button" value="*" onclick="giatri('*')"/></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="C" onclick="xoa()"/></td>
+        <td><input type="button" value="0" onclick="giatri('0')"/></td>
+        <td><input type="button" value="=" onclick="ketqua()"/></td>
+        <td><input type="button" value="/" onclick="giatri('/')"/></td>
+    </tr>
+</table>
+<script>
+    function giatri(input){
+        document.getElementById("hienthi").value += input;
+    }
+    function ketqua(){
+     let kq = eval(document.getElementById("hienthi").value);
+     document.getElementById("hienthi").value = kq;
+    }
+    function xoa(){
+        let kp2="";
+        document.getElementById("hienthi").value = kp2;
+    }
+</script>
+</body>
+</html>
