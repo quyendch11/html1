@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="ball" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg"
+         style="width: 15%">
+    <p> click chuột để di chuyển bóng</p>
+    <button onclick="phai()">phải</button>
+    <button onclick="trai()">trái</button>
+<script>
+    let imgObj;
+    imgObj = document.getElementById('ball');
+    function init() {
+        imgObj = document.getElementById('ball');
+        imgObj.style.position = 'relative';
+        imgObj.style.left = '0px';
+    }
+    function phai() {
+        imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+    }
+    function trai (){
+        imgObj.style.left = parseInt(imgObj.style.left) - 10 + 'px';
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>
