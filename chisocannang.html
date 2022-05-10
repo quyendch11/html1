@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>tính chỉ số cân nặng(BMI)</h1>
+<p>nhập cân nặng(kg): <input id="width" name="weitd" type="number"/></p>
+<p>nhập chiều cao (m): <input  id="height" name="height" type="number"/> </p>
+<button onclick="kiemtra()">kiểm tra</button>
+<p id="bm"></p>
+<p id="kq"></p>
+<script>
+    function kiemtra(){
+        let socan = +document.getElementById("width").value;
+        let chieucao= +document.getElementById("height").value;
+        let ketqua;
+        let bmi;
+        bmi = socan/(chieucao*chieucao);
+        if (bmi <18) {
+            ketqua = "gầy";
+        }
+        else if (bmi<25.0){
+            ketqua ="bình thường";
+        }
+        else if (bmi<30.0){
+            ketqua="béo";
+        }
+        else{
+            ketqua="quá béo";
+        }
+        document.getElementById("bm").innerHTML = "chỉ số bmi " + bmi;
+        document.getElementById("kq").innerHTML = "bạn " +ketqua;
+    }
+</script>
+</body>
+</html>
